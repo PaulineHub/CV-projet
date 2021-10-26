@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*GENERAL*/
+
+body {
+    background-color: rgb(232, 233, 233); /*gris clair*/
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin : 40px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1700px;
+    margin: 60px 40px 0px 40px
+}
+
+.portrait-wrapper {
+    width: 20%;
+    max-width: 250px;
+}
+
+.header-content {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.img-container {
+    background: pink;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*NAVIGATION*/
+
+nav {
+    width: 20%;
+    max-width: 250px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav li {
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+}
+
+
+
+/*SECTION*/
+
+.section-content {
+    margin : 40px 60px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.category-section-title {
+    background-color: black;
+    color : rgb(232, 233, 233);
+    padding-top: 8px;
+}
