@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pauline Huby 2194480">
+    <meta name="description" content="page contact du cv">
+    <meta name="keywords" content="contact coordonnee formulaire">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/32150d741e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="portrait-wrapper">
+            <div class="img-cube-color"></div>
+            <div class="img-container"></div>
+        </div>
+        <div class="header-content">
+            <div class="rectangle-color"></div>
+            <h1>Pauline Huby</h1>
+            <p class="header-subtitle">Développeuse Web</p>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <div class="color-active-item color-active-item-5"></div>
+            <ul role="menu">
+                <li role="menuitem"><a href="./index.html">Accueil</a></li>
+                <li role="menuitem"><a href="./education.html">Education</a></li>
+                <li role="menuitem"><a href="./carriere.html">Carrière</a></li>
+                <li role="menuitem"><a href="./realisations.html">Réalisations</a></li>
+                <li role="menuitem"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons-container">
+                <i class="fa-brands fa-github"></i><i class="fa-brands fa-linkedin"></i>
+            </div>
+        </nav>
+        <section class="section-content">
+            <div class="category-section-title">
+                <h2>Contact</h2>
+            </div>
+            <div>
+                <form action="" method="GET">
+                    <div class="contact-label-wrapper contact-name-wrapper">
+                        <div class="name-width">
+                            <label for="userFirstName">Prénom</label><br>
+                            <input type="text" name="prenom" id="userFirstName" class="textarea-style textarea-name-width">
+                        </div>
+                        <div class="name-width">
+                            <label for="userFamilyName">Nom</label><br>
+                            <input type="text" name="nom" id="userFamilyName" class="textarea-style textarea-name-width">
+                        </div>
+                    </div>
+                    <div class="contact-label-wrapper">
+                        <label for="userEmail">Courriel</label><br>
+                        <input type="email" name="courriel" id="userEmail" class="textarea-style textarea-mail">
+                    </div>
+                    <div class="contact-label-wrapper">
+                        <label for="userComment">Message</label><br>
+                        <textarea name="comment" id="userComment" cols="30" rows="10" placeholder="Ecrivez ici..." class="textarea-style textarea-comment"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
