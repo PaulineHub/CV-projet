@@ -316,6 +316,11 @@ nav a {
     height: 370px;
     transition-duration: .4s;
     transition-timing-function: linear;
+    height: 100vh;
+}
+
+.border-li {
+    border-bottom: 3px solid black;
 }
 
 
@@ -341,9 +346,9 @@ nav a {
     .fa-brands {
         padding-right: 10px;
     }
-    /*nav a:active {
-        border-bottom: 10px solid #faed38;
-    }*/
+    .padding20{
+        padding-left: 0px;
+    }
 }
 
 
@@ -445,14 +450,13 @@ margin-right: 10px;
 .realisation-bloc {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     height: 200px;
     margin-bottom: 20px;
     position: relative;
 }
 
-.realisation-bloc-flex-end {
-    justify-content: flex-end;
+.realisation-bloc-end {
+    flex-direction: row-reverse;
 }
 
 .realisation-title {
@@ -517,15 +521,34 @@ margin-right: 10px;
 }
 @media screen and ( max-width: 768px) {
     .realisation-bloc {
-    display: block;
+        padding-right: 20px;
+    }
+    .realisation-img {
+        display: block;
+        margin: auto;
+    }
+    .black-line {
+        display: none;
+    }
+    .black-circle {
+        display: none;
+    }
 }
+
+@media screen and ( max-width: 425px) {
+    .realisation-bloc {
+        display: block;
+        height: 350px;
+        margin: auto;
+        padding-right: 0px;
+    }
     .realisation-title {
-    width: 100%;
-}
-.realisation-img {
-    display: block;
-    margin: auto;
-}
+        margin: auto;
+        padding-top: 20px;
+    }
+    .height380 {
+        height: 380px;
+    }
 }
 
 /*CONTACT FORM*/
@@ -611,5 +634,15 @@ footer {
     right: 0;
     left: 0;
     margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.white-icon {
+    color: #f1f1f1;
 }
 
