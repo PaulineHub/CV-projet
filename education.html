@@ -16,6 +16,7 @@
 <body>
     <div class="big-container">
         <header>
+            <div><i class="fa fa-bars" id="menu-icon"></i></div>
             <div class="portrait-wrapper">
                 <div class="img-cube-color"></div>
                 <img src="./img/portrait-cv.jpg" alt="portrait pauline huby">
@@ -27,23 +28,61 @@
             </div>
         </header>
         <div class="container">
-            <nav>
-                <div class="color-active-item color-active-item-2"></div>
+            <nav id="nav">
                 <ul role="menu">
-                    <li role="menuitem"><a href="./index.html">Accueil</a></li>
-                    <li role="menuitem"><a href="./education.html">Education</a></li>
-                    <li role="menuitem"><a href="./carriere.html">Carrière</a></li>
-                    <li role="menuitem"><a href="./realisations.html">Réalisations</a></li>
-                    <li role="menuitem"><a href="./contact.html">Contact</a></li>
+                    <li>
+                        <a href="./index.html" role="menuitem">Accueil</a>
+                        <div class="color-navigation-li color-navigation-li1"></div>
+                    </li>
+                    <li class="height-grow">
+                        <a href="#" role="menuitem" class="navigation-li-active">Education</a>
+                        <div class="color-navigation-li color-navigation-li2 color-navigation-li-active"></div>
+                        <div>
+                            <ul class="padding20">
+                                <li class="sous-menuitem">
+                                    <a href="./education.html#formations" role="menuitem">Formations</a>
+                                </li>
+                                <li class="sous-menuitem">
+                                    <a href="./education.html#technologies" role="menuitem">Technologies</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="height-grow">
+                        <a href="#" role="menuitem">Carrière</a>
+                        <div class="color-navigation-li color-navigation-li3"></div>
+                        <div>
+                            <ul class="padding20">
+                                <li class="sous-menuitem">
+                                    <a href="./carriere.html#experiences" role="menuitem">Expériences</a>
+                                </li>
+                                <li class="sous-menuitem">
+                                    <a href="./carriere.html#implications" role="menuitem">Implications</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./realisations.html" role="menuitem">Réalisations</a>
+                        <div class="color-navigation-li color-navigation-li4"></div>
+                    </li>
+                    <li>
+                        <a href="./contact.html" role="menuitem">Contact</a>
+                        <div class="color-navigation-li color-navigation-li5"></div>
+                    </li>
+                    <li>
+                        <a href="./page-validation.html" role="menuitem">Validation</a>
+                        <div class="color-navigation-li color-navigation-li6"></div>
+                    </li>
                 </ul>
                 <div class="social-icons-container">
                     <a href="https://github.com/PaulineHub?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/pauline-huby-521516a4/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/pauline-huby-521516a4/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
             </nav>
             <main class="main-content">
-                <section class="section-content">
+                <section class="section-content" id="formations">
                     <div class="category-title">
                         <h2>Education</h2>
                     </div>
@@ -81,7 +120,7 @@
                         <h4>Université de Nantes, Nantes, France</h4>
                     </div>
                 </section>
-                <section class="section-content">
+                <section class="section-content" id="technologies">
                     <div class="category-title">
                         <h2>Technologies</h2>
                     </div>
@@ -104,7 +143,13 @@
                 </section>
             </main>
         </div>
+        <footer>
+            <div>
+                <p>© 2021 Pauline Huby</p>
+            </div>
+        </footer>
     </div>
+    <script src="menu.js"></script>
 </body>
 
 </html>

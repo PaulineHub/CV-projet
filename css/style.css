@@ -67,6 +67,9 @@ h4 {
     h1 {
         font-size: 55px;
     }
+    h3 {
+        font-size: 18px;
+    }
 }
 
 @media screen and ( max-width: 425px) {
@@ -104,7 +107,6 @@ header {
     justify-content: center;
     align-items: center;
     max-width: 1010px;
-    /*padding: 60px 40px 40px 40px;*/
     margin: 60px 40px 40px 40px;
 }
 
@@ -223,6 +225,10 @@ nav li:hover .color-navigation-li {
     opacity: 1;
 }
 
+.navigation-li-active {
+    font-style: italic;
+}
+
 .padding20 {
     padding-left: 20px;
 }
@@ -234,16 +240,12 @@ nav li:hover .color-navigation-li {
     overflow: hidden;
 }
 
-.sous-menuitem:hover {
-    font-size: 21px;
-    transition: 200ms linear;
-}
-
 nav .height-grow:hover {
     height: 120px;
     transition-duration: .2s;
     transition-timing-function: linear;
 }
+
 nav .height-grow:hover .sous-menuitem {
     height: 20px;
 }
@@ -261,10 +263,6 @@ nav a {
     position: absolute;
     opacity: 0;
     left: 35px;
-}
-
-.color-navigation-li-active {
-    opacity: 1;
 }
 
 .color-navigation-li1 {
@@ -317,10 +315,6 @@ nav a {
     transition-duration: .4s;
     transition-timing-function: linear;
     height: 100vh;
-}
-
-.border-li {
-    border-bottom: 3px solid black;
 }
 
 
@@ -527,6 +521,12 @@ margin-right: 10px;
         display: block;
         margin: auto;
     }
+    .realisation-title {
+        padding-top: 70px;
+    }
+    .padding50 {
+        padding-top: 50px;
+    }
     .black-line {
         display: none;
     }
@@ -536,9 +536,12 @@ margin-right: 10px;
 }
 
 @media screen and ( max-width: 425px) {
+    .realisation-wrapper {
+        padding-top: 20px;
+    }
     .realisation-bloc {
         display: block;
-        height: 350px;
+        height: 330px;
         margin: auto;
         padding-right: 0px;
     }
@@ -619,6 +622,13 @@ button {
     .textarea-style {
         width: 96%;
     }
+}
+
+/*VALIDATION*/
+
+.img-responsive {
+    width: 100%;
+    height: auto;
 }
 
 /*FOOTER*/
