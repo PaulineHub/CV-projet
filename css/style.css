@@ -631,6 +631,10 @@ button {
     height: auto;
 }
 
+.extra-padding-top {
+    padding-top: 20px;
+}
+
 /*FOOTER*/
 
 footer {
