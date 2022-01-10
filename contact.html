@@ -98,12 +98,17 @@
                             </div>
                         </div>
                         <div class="contact-label-wrapper">
-                            <label for="userPhone">Téléphone</label><br>
-                            <input type="text" name="phone" id="userPhone" class="textarea-style textarea-mail">
+                            <label for="userEmail">Courriel</label><br>
+                            <input type="email" name="courriel" id="userEmail" class="textarea-style ">
                         </div>
                         <div class="contact-label-wrapper">
-                            <label for="userEmail">Courriel</label><br>
-                            <input type="email" name="courriel" id="userEmail" class="textarea-style textarea-mail">
+                            <label for="userObject">Objet</label><br>    
+                            <select name="object" id="userObject" class="textarea-style list" required>
+                                <option value="">Sélectionner</option> 
+                                <option value="Echange">Echanger ensemble</option>
+                                <option value="Travail">Travailler ensemble</option>
+                                <option value="Autre">Autre</option>
+                            </select>
                         </div>
                         <div class="contact-label-wrapper">
                             <label for="userComment">Message</label><br>

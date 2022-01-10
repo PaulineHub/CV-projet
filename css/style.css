@@ -596,6 +596,12 @@ label {
     height : 100px;
 }
 
+.list {
+    height: 45px;
+    width: 700px;
+    background-color: white;
+}
+
 button {
     background-color: #000000;
     color: #f1f1f1;
@@ -622,9 +628,16 @@ button {
     .textarea-style {
         width: 96%;
     }
+    .list {
+        width: 99%;
+    }
 }
 
 /*VALIDATION*/
+
+.validation-img-container {
+    overflow: hidden;
+}
 
 .img-responsive {
     width: 100%;
@@ -633,6 +646,12 @@ button {
 
 .extra-padding-top {
     padding-top: 20px;
+}
+
+@media screen and ( max-width: 425px) {
+    .img-responsive {
+    width: 150%;
+    }
 }
 
 /*FOOTER*/
